@@ -1,0 +1,45 @@
+
+const int N = 1e7 + 5, mod = 1e9 + 7;
+long long factorialNumInverse[N + 1];
+long long naturalNumInverse[N + 1];
+long long fact[N + 1];
+
+void InverseofNumber(long long p) {
+    naturalNumInverse[0] = naturalNumInverse[1] = 1;
+    for (int i = 2; i <= N; i++)
+        naturalNumInverse[i] = naturalNumInverse[p % i] * (p - p / i) % p;
+}
+
+void InverseofFactorial(long long p) {
+    factorialNumInverse[0] = factorialNumInverse[1] = 1;
+    for (int i = 2; i <= N; i++)
+        factorialNumInverse[i] = (naturalNumInverse[i] * factorialNumInverse[i - 1]) % p;
+}
+
+void factorial(long long p) {
+    fact[0] = 1;
+    for (int i = 1; i <= N; i++) {
+        fact[i] = (fact[i - 1] * i) % p;
+    }
+}
+
+long long nPr(long long N, long long R, long long p) {
+
+    long long ans = ((fact[N])
+                     % p * factorialNumInverse[N - R])
+                    % p;
+    return ans;
+}
+
+long long fastpow(long long base, long long power, long long M) {
+    if (power == 0) return 1;
+    if (power == 1) return base;
+    long long val = fastpow(base, power / 2, M);
+    return (power % 2 == 0) ? (val * val) % M : (((val * val) % M) * base) % M;
+}
+
+signed main() {
+    InverseofNumber(mod);
+    InverseofFactorial(mod);
+    factorial(mod);
+}
