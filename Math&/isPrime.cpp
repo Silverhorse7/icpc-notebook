@@ -33,6 +33,27 @@ void sieve() {
     }
 }
 
+const int N = 1e6 + 5;
+int pf[N];
+ 
+void pre() { //call pre at the beginning (in main)
+	memset(pf, -1, sizeof(pf));
+	for (int i = 2; i < N; i++)
+		if (pf[i] == -1) {
+			for (int j = i; j < N; j += i) pf[j] = i;
+		}
+}
+ 
+vector<pair<int, int>> get_pf(int n) { // first : prime , second : power
+	vector<pair<int, int>> r;
+	int c = n;
+	while (c > 1) {
+		int v = pf[c];
+		r.emplace_back(v, 0);
+		while (c % v == 0) r.back().second++, c /= v;
+	}
+	return r;
+}
 
 for (int i = 1; i <= sqrt(n); i++) {
   if (n % i == 0) {

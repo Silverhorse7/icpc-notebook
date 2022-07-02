@@ -1,3 +1,7 @@
+Basically instead of doing : map<int,map<int,int>> and do some sort of recursion
+create only one map for the root and create the rest of the maps during the recursion and do the rest of the operation on them
+it optimizes the memory.
+
 #include <bits/stdc++.h>
 using namespace std;
 #define fo(i,n) for(i=0;i<n;i++)
