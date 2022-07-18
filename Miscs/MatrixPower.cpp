@@ -2,7 +2,7 @@
 // usually we think about two things : graph connection , dp states connection
 // graph connection : usually draw connection , and find for n = 1 and try to find stuff related to matrix power
 // dp states : TODO : solve some and continue it  
-
+// problems : https://codeforces.com/blog/entry/80195?fbclid=IwAR2-aS8KutNTwbTfEmfqtXyhPzwV5XzxaDl1i6TTa_6EbF4eMCRCqMZyTd4
 struct Matrix {
  
     const static int D = 101;
