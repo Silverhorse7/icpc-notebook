@@ -1,0 +1,22 @@
+- [X] segment tree
+- [X] Merge sort tree
+- [X] wavelet tree
+- [X] Mo's
+- [X] segment tree
+- [X] wavelet tree
+- [x] li-chao tree
+- [X] sqrt decomposition
+- [X] Trie
+- [X] DSU
+- [X] DSU on tree
+- [X] monotonous queue,stack
+- [ ] Implicit segment tree
+- [ ] Sqrt tree
+- [ ] Treap
+- [ ] Heavy-light decomposition
+- [ ] Persistent segment tree
+- [ ] Sparse table
+- [ ] fenwick tree
+- [ ] Rope
+- [ ] Divide and conquer on queries
+- [ ] Divide and conquer for insert and query problem
