@@ -1,0 +1,18 @@
+# Knowledge track
+- [x] bridge tree
+- [x] Dijkstra
+- [x] LCA
+- [x] bridges
+- [x] DSU
+- [x] game on trees
+- [x] 0/1 bfs
+- [x] re-rooting technique
+- [x] small-to-large trick
+- [x] spfa
+- [x] SCC
+- [X] Tarjan
+- [ ] Dinics
+- [ ] minimum spanning tree
+- [ ] Palindromic tree
+- [ ] 2-sat
+- [ ] Virtual-tree 
