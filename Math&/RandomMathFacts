@@ -1,0 +1,4 @@
+a number L ends in x trailing zeros when written in base-Y if it could be written as : 
+1-L = Y^x * h ( h is a number that is not divisble by Y)
+2- if a number H can be written as H = (divisor1)^a * (divisor2)^b * ...^z * h , H will have min(a,b) trailing zeros when written in base Y
+
