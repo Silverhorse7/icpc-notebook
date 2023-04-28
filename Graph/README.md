@@ -11,8 +11,8 @@
 - [x] spfa
 - [x] SCC
 - [X] Tarjan
-- [ ] Dinics
-- [ ] minimum spanning tree
+- [X] Dinics
+- [X] minimum spanning tree
 - [ ] Palindromic tree
-- [ ] 2-sat
+- [X] 2-sat
 - [ ] Virtual-tree 
